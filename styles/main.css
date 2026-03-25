@@ -1,6 +1,8 @@
 body {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 .header-hook {

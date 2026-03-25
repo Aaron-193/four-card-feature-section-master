@@ -13,6 +13,8 @@ $font-family: "Poppins", sans-serif;
 body {
     font-size: $font-size-html;
     font-family: $font-family;
+    display: grid;
+    place-items: center;
 }
 
 
