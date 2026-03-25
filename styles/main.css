@@ -1,0 +1,121 @@
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-hook {
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .header-hook {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.header-hook .header-content {
+  margin-block-end: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-hook .light-hook {
+  color: hsl(212, 6%, 44%);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.header-hook .bold-hook {
+  color: hsl(234, 12%, 34%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.header-hook .hook-description {
+  color: hsl(234, 12%, 34%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block-end: 2rem;
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas: "card1" "card2" "card3" "card4";
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas: "card1 card2" "card3 card4";
+    align-items: stretch;
+  }
+}
+@media (min-width: 800px) {
+  main {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card1 card2 card4" "card1 card3 card4";
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+.card1, .card2, .card3, .card4 {
+  box-shadow: 0 10px 20px hsla(212, 6%, 44%, 0.2);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.card1 .title-card, .card2 .title-card, .card3 .title-card, .card4 .title-card {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-block: 0;
+  color: hsl(234, 12%, 34%);
+}
+.card1 .description-card, .card2 .description-card, .card3 .description-card, .card4 .description-card {
+  color: hsl(212, 6%, 44%);
+}
+.card1 figure, .card2 figure, .card3 figure, .card4 figure {
+  display: flex;
+  justify-content: flex-end;
+  margin-inline: 0;
+  margin-block-end: 0;
+  margin-block-start: auto;
+}
+.card1 figure .card-icon, .card2 figure .card-icon, .card3 figure .card-icon, .card4 figure .card-icon {
+  max-width: clamp(3rem, 0.875rem + 6vw, 4rem);
+}
+
+.card1 {
+  grid-area: card1;
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+@media (min-width: 800px) {
+  .card1 {
+    align-self: center;
+  }
+}
+
+.card2 {
+  grid-area: card2;
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+  grid-area: card3;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+  grid-area: card4;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+@media (min-width: 800px) {
+  .card4 {
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
