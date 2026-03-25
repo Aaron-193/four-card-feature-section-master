@@ -13,6 +13,7 @@ $font-family: "Poppins", sans-serif;
 body {
     font-size: $font-size-html;
     font-family: $font-family;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
